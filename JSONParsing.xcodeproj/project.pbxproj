@@ -15,6 +15,8 @@
 		499925EB273952CE001B7B67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499925E9273952CE001B7B67 /* LaunchScreen.storyboard */; };
 		499925F527395479001B7B67 /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499925F427395479001B7B67 /* JSONData.swift */; };
 		499925F7273958C1001B7B67 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499925F6273958C1001B7B67 /* Posts.swift */; };
+		499925FB273968FB001B7B67 /* GeoJSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499925FA273968FB001B7B67 /* GeoJSONData.swift */; };
+		499925FE27396F1A001B7B67 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499925FD27396F1A001B7B67 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		499925EC273952CE001B7B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		499925F427395479001B7B67 /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
 		499925F6273958C1001B7B67 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		499925FA273968FB001B7B67 /* GeoJSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONData.swift; sourceTree = "<group>"; };
+		499925FD27396F1A001B7B67 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499925FE27396F1A001B7B67 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,7 @@
 			children = (
 				499925DD273952CD001B7B67 /* JSONParsing */,
 				499925DC273952CD001B7B67 /* Products */,
+				499925FC27396F1A001B7B67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +70,7 @@
 				499925E0273952CD001B7B67 /* SceneDelegate.swift */,
 				499925F427395479001B7B67 /* JSONData.swift */,
 				499925F6273958C1001B7B67 /* Posts.swift */,
+				499925FA273968FB001B7B67 /* GeoJSONData.swift */,
 				499925E2273952CD001B7B67 /* ViewController.swift */,
 				499925E4273952CD001B7B67 /* Main.storyboard */,
 				499925E7273952CE001B7B67 /* Assets.xcassets */,
@@ -71,6 +78,14 @@
 				499925EC273952CE001B7B67 /* Info.plist */,
 			);
 			path = JSONParsing;
+			sourceTree = "<group>";
+		};
+		499925FC27396F1A001B7B67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				499925FD27396F1A001B7B67 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +161,7 @@
 				499925E3273952CD001B7B67 /* ViewController.swift in Sources */,
 				499925F527395479001B7B67 /* JSONData.swift in Sources */,
 				499925F7273958C1001B7B67 /* Posts.swift in Sources */,
+				499925FB273968FB001B7B67 /* GeoJSONData.swift in Sources */,
 				499925DF273952CD001B7B67 /* AppDelegate.swift in Sources */,
 				499925E1273952CD001B7B67 /* SceneDelegate.swift in Sources */,
 			);
