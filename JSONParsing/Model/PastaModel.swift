@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct PastaJSON: Codable {
-    let id: Int
-    let name: String
-    let url: String
-    let text: String
+struct PastaModel: Codable {
+    let id: String?
+    let name: String?
+    let url: String?
+    let text: String?
 }

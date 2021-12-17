@@ -12,15 +12,33 @@ class ViewController: UIViewController {
     let urlOfPosts = "https://jsonplaceholder.typicode.com/posts"
     let urlOfJSONData = "https://jsonplaceholder.typicode.com/users"
     let geoJSONUrl = "https://raw.githubusercontent.com/Tambanco/GeoJSONPoligonSample/main/geoJSON.json"
+    let pastaURL = "https://raw.githubusercontent.com/Tambanco/PastaJSON/main/pasta.json"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        fetchData(url: geoJSONUrl)
+        fetchData(url: pastaURL)
 //        fetchGeoData(url: geoJSONUrl)
     }
+}
 
+extension ViewController {
+    func fetchData(url: String) {
+        guard let url = URL(string: url) else { return }
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
 
+        guard let data = data else { return }
+            print(data)
+
+            do {
+                let json = try JSONDecoder().decode([PastaModel].self, from: data)
+                print(json)
+            } catch {
+                print(error.localizedDescription)
+            }
+
+        }.resume()
+    }
 }
 
 //extension ViewController {
@@ -41,22 +59,3 @@ class ViewController: UIViewController {
 //        }.resume()
 //    }
 //}
-
-extension ViewController {
-    func fetchData(url: String) {
-        guard let url = URL(string: url) else { return }
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-
-        guard let data = data else { return }
-            print(data)
-
-            do {
-                let json = try JSONDecoder().decode(PastaJSON.self, from: data)
-                print(json)
-            } catch {
-                print(error.localizedDescription)
-            }
-
-        }.resume()
-    }
-}
