@@ -17,6 +17,7 @@
 		499925F7273958C1001B7B67 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499925F6273958C1001B7B67 /* Posts.swift */; };
 		499925FB273968FB001B7B67 /* GeoJSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499925FA273968FB001B7B67 /* GeoJSONData.swift */; };
 		499925FE27396F1A001B7B67 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499925FD27396F1A001B7B67 /* MapKit.framework */; };
+		49E350C0276CE09300216132 /* PastaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E350BF276CE09300216132 /* PastaModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		499925F6273958C1001B7B67 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		499925FA273968FB001B7B67 /* GeoJSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONData.swift; sourceTree = "<group>"; };
 		499925FD27396F1A001B7B67 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		49E350BF276CE09300216132 /* PastaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				499925F427395479001B7B67 /* JSONData.swift */,
+				49E350BF276CE09300216132 /* PastaModel.swift */,
 				499925F6273958C1001B7B67 /* Posts.swift */,
 				499925FA273968FB001B7B67 /* GeoJSONData.swift */,
 			);
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				499925E3273952CD001B7B67 /* ViewController.swift in Sources */,
+				49E350C0276CE09300216132 /* PastaModel.swift in Sources */,
 				499925F527395479001B7B67 /* JSONData.swift in Sources */,
 				499925F7273958C1001B7B67 /* Posts.swift in Sources */,
 				499925FB273968FB001B7B67 /* GeoJSONData.swift in Sources */,
